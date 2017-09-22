@@ -1,4 +1,4 @@
-<template>
+<template{{#htmlPreprocess}} lang="{{#if_eq htmlPreprocessConfig "pug"}}pug{{/if_eq}}"{{/htmlPreprocess}}>
   {{#unless htmlPreprocess}}
   <div>
 
@@ -6,7 +6,7 @@
   {{/unless}}
   {{#htmlPreprocess}}
     {{#if_eq htmlPreprocessConfig "pug"}}
-      div
+  div
     {{/if_eq}}
   {{/htmlPreprocess}}
 </template>

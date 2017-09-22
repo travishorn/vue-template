@@ -1,22 +1,21 @@
 <template{{#htmlPreprocess}} lang="{{#if_eq htmlPreprocessConfig "pug"}}pug{{/if_eq}}"{{/htmlPreprocess}}>
   {{#unless htmlPreprocess}}
-    <div>
-      {{#router}}
-      <router-view />
-      {{else}}
-      <home-page />
-      {{/router}}
-    </div>
+  <div>
+    {{#router}}
+    <router-view />
+    {{else}}
+    <home-page />
+    {{/router}}
+  </div>
   {{/unless}}
-
   {{#htmlPreprocess}}
     {{#if_eq htmlPreprocessConfig "pug"}}
-      div
-        {{#router}}
-        router-view
-        {{else}}
-        home-page
-        {{/router}}
+  div
+    {{#router}}
+    router-view
+    {{else}}
+    home-page
+    {{/router}}
     {{/if_eq}}
   {{/htmlPreprocess}}
 </template>
