@@ -1,13 +1,6 @@
-# vue-webpack-boilerplate
+# travishorn/vue-template
 
-> A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
-
-> This template is Vue 2.0 compatible. For Vue 1.x use this command: `vue init webpack#1.0 my-project`
-
-## Documentation
-
-- [For this template](http://vuejs-templates.github.io/webpack): common questions specific to this template are answered and each part is described in greater detail
-- [For Vue 2.0](http://vuejs.org/guide/): general information about how to work with Vue, not specific to this template
+> A full-featured Webpack setup for Vue 2 with hot-reload, lint-on-save, unit testing, css extraction, HTML preprocessing, vue-router, vuex, and Bootstrap 4.
 
 ## Usage
 
@@ -15,7 +8,7 @@ This is a project template for [vue-cli](https://github.com/vuejs/vue-cli). **It
 
 ``` bash
 $ npm install -g vue-cli
-$ vue init webpack my-project
+$ vue init travishorn/vue-template my-project
 $ cd my-project
 $ npm install
 $ npm run dev
@@ -31,6 +24,10 @@ If port 8080 is already in use on your machine you must change the port number i
   - State preserving compilation error overlay
   - Lint-on-save with ESLint
   - Source maps
+  - URL routing using [vue-router](https://router.vuejs.org/en/)
+  - State management using [vuex](https://vuex.vuejs.org/en/)
+  - HTML preprocessing using [Pug](https://pugjs.org/)
+  - Styles and JS components using [Bootstrap 4 Beta](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 
 - `npm run build`: Production ready build.
   - JavaScript minified with [UglifyJS](https://github.com/mishoo/UglifyJS2).
