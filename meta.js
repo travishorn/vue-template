@@ -52,6 +52,22 @@ module.exports = {
       type: 'confirm',
       message: 'Use Bootstrap 4 Beta?',
     },
+    htmlPreprocess: {
+      type: 'confirm',
+      message: 'Use an HTML preprocessor?',
+    },
+    htmlPreprocessConfig: {
+      when: 'htmlPreprocess',
+      type: 'list',
+      message: 'Pick an HTML prepocessor',
+      choices: [
+        {
+          name: 'Pug (https://pugjs.org/)',
+          value: 'pug',
+          short: 'Pug',
+        },
+      ],
+    },
     lint: {
       type: 'confirm',
       message: 'Use ESLint to lint your code?',
