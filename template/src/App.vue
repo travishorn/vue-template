@@ -1,9 +1,9 @@
 <template>
-  <div id="app">
+  <div>
     {{#router}}
-    <router-view></router-view>
+    <router-view />
     {{else}}
-    <hello></hello>
+    <home-page />
     {{/router}}
   </div>
 </template>
