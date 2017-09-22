@@ -1,14 +1,14 @@
 <template>
-  {{#unless htmlPreProcess}}
+  {{#unless htmlPreprocess}}
   <div>
 
   </div>
   {{/unless}}
-  {{#htmlPreProcess}}
-    {{#if_eq htmlPreProcessConfig "pug"}}
+  {{#htmlPreprocess}}
+    {{#if_eq htmlPreprocessConfig "pug"}}
       div
     {{/if_eq}}
-  {{/htmlPreProcess}}
+  {{/htmlPreprocess}}
 </template>
 
 <script>

@@ -1,5 +1,5 @@
-<template{{#htmlPreprocess}} lang="{{#if_eq htmlPreProcessConfig "pug"}}pug{{/if_eq}}"{{/htmlPreprocess}}>
-  {{#unless htmlPreProcess}}
+<template{{#htmlPreprocess}} lang="{{#if_eq htmlPreprocessConfig "pug"}}pug{{/if_eq}}"{{/htmlPreprocess}}>
+  {{#unless htmlPreprocess}}
     <div>
       {{#router}}
       <router-view />
@@ -9,8 +9,8 @@
     </div>
   {{/unless}}
 
-  {{#htmlPreProcess}}
-    {{#if_eq htmlPreProcessConfig "pug"}}
+  {{#htmlPreprocess}}
+    {{#if_eq htmlPreprocessConfig "pug"}}
       div
         {{#router}}
         router-view
@@ -18,7 +18,7 @@
         home-page
         {{/router}}
     {{/if_eq}}
-  {{/htmlPreProcess}}
+  {{/htmlPreprocess}}
 </template>
 
 <script>

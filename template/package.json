@@ -100,7 +100,7 @@
     "webpack-dev-middleware": "^1.10.0",
     "webpack-hot-middleware": "^2.18.0",
     "webpack-merge": "^4.1.0"{{#htmlPreprocess}},
-    {{#if_eq htmlPreProcessConfig "pug"}}"pug": "^2.0.0-rc.4"{{/if_eq}}
+    {{#if_eq htmlPrerocessConfig "pug"}}"pug": "^2.0.0-rc.4"{{/if_eq}}
     {{/htmlPreprocess}}
   },
   "engines": {
