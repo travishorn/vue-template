@@ -25,7 +25,7 @@ new Vue({
   {{/router}}
   {{#vuex}}
   store,
-  {{#vuex}}
+  {{/vuex}}
   {{#if_eq build "runtime"}}
   render: h => h(App){{#if_eq lintConfig "airbnb"}},{{/if_eq}}
   {{/if_eq}}
